@@ -1,0 +1,22 @@
+.image {
+    float: left;
+    margin: 5px;
+    margin-bottom: 2px;
+    max-width: 19%;
+}
+
+.infotext {
+    font-size: large;
+    color: #f2d492;
+    margin: 5px
+}
+
+.moreInfo{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.infoList {
+    background-color: #283845;
+}

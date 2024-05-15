@@ -1,0 +1,12 @@
+.navigation {
+    background-color: #f2d492;
+}
+
+.activeTab {
+    background-color: #283845;
+    color:#f2d492 !important
+}
+
+.active:focus {
+    color: #f2d492 !important;
+}
