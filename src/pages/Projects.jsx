@@ -1,23 +1,31 @@
+import style from "./Projects.module.css"
+
 export default function Blog() {
-    return (
-      <div>
-        <h1>Blog Page</h1>
-        <p>
-          Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-          Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-          dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-          sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-          sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-          vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-          libero. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-          lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-          in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-          bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-          est ligula suscipit velit, sed bibendum turpis dui in sapien.
-        </p>
+  return (
+    <div>
+      <h1 className="pageHeaders">Front-End Projects</h1>
+      <hr></hr>
+      <div className={style.singleCard}>
+        <div className={`${style.cardImage}`}>
+          <img src="./assets/Sargo.png" className="card-img-top" alt="..." />
+          <div className="card-body">
+            <h5 className={`${style.cardTitle} card-title`}>Sargo National Park Catalog</h5>
+            <p className={`${style.cardDescription} card-text`}>A NPS API driven project that allows the user to input a state code and receive a list of all national parks within that state. Clicking a specific park navigates you to that parks specific page with more info</p>
+            <hr></hr>
+            <h5 className={`${style.cardTitle} card-title`}>Technologies Used</h5>
+          </div>
+          <ul className="list-group list-group-flush">
+            <li className={`list-group-item ${style.listItem}`}>Google Maps API</li>
+            <li className={`list-group-item ${style.listItem}`}>NPS parks API</li>
+            <li className={`list-group-item ${style.listItem}`}>Bootstrap</li>
+            <li className={`list-group-item ${style.listItem}`}>Bulma</li>
+          </ul>
+          <div className={`card-body ${style.cardBody}`}>
+            <a href="https://github.com/SergMalyshka/Syntax-Sorcerers"><img className={style.github} src=".\assets\github.png"></img></a>
+            <a href="https://sergmalyshka.github.io/Syntax-Sorcerers/index.html"><img className={style.github} src=".\assets\live.png"></img></a>
+          </div>
+        </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

@@ -7,7 +7,7 @@
 
 .infotext {
     font-size: large;
-    color: #f2d492;
+    color: #202C39;
     margin: 5px
 }
 
@@ -18,5 +18,7 @@
 }
 
 .infoList {
-    background-color: #283845;
+    background-color: #B8B08D;
+    color: #202C39;
 }
+

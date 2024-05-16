@@ -1,5 +1,14 @@
 .navigation {
-    background-color: #f2d492;
+    background-color: #F29559;
+    color: #202C39;
+}
+
+.inactive {
+    color: #202C39;
+}
+
+.inactive:hover {
+    color: #283845
 }
 
 .activeTab {

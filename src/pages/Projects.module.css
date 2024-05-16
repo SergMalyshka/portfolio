@@ -1,0 +1,41 @@
+.cardPicture {
+    max-width: 15%;
+}
+
+.singleCard {
+    max-width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    margin: 10px;
+}
+
+.listItem {
+    background-color: #B8B08D;
+}
+
+.cardTitle {
+    justify-content: center;
+    text-align: center;
+    color: #202C39;
+    font-size: 20px;
+}
+
+.cardDescription {
+    color: #202C39;
+    margin: 3px;
+    text-align: center;
+    font-size: 15px
+}
+
+.cardBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    max-width: 50px;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

@@ -18,9 +18,6 @@ export default function About() {
       <h2 className='tetriaryHeader'>General</h2>
       <div className='container'>
         <div className='row'>
-          <div className='col-1'>
-            <div className="vr verticalRule"></div>
-          </div>
           <div className='col-11'>
             <ul>
               <li>Full stack Web Development</li>
@@ -40,9 +37,6 @@ export default function About() {
       <h2 className='tetriaryHeader'>AWS</h2>
       <div className='container'>
         <div className='row'>
-          <div className='col-1'>
-            <div className="vr verticalRule"></div>
-          </div>
           <div className='col-11'>
             <ul>
               <li>DynamoDB</li>
@@ -57,9 +51,6 @@ export default function About() {
       <h2 className='tetriaryHeader'>Front End Tools</h2>
       <div className='container'>
         <div className='row'>
-          <div className='col-1'>
-            <div className="vr verticalRule"></div>
-          </div>
           <div className='col-11'>
             <ul>
               <li>CSS Frameworks: Bootstrap, Bulma, etc</li>
@@ -74,9 +65,6 @@ export default function About() {
       <h2 className='tetriaryHeader'>Database structures and tools</h2>
       <div className='container'>
         <div className='row'>
-          <div className='col-1'>
-            <div className="vr verticalRule"></div>
-          </div>
           <div className='col-11'>
             <ul>
               <li>SQL</li>

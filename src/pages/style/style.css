@@ -1,28 +1,28 @@
 body, html {
-    background-color:#283845;
+    background-color:#B8B08D;
     height: 100%;
-    color: #b8b08d 
+    color: #202C39 
 }
 
 .pageHeaders {
     margin-top: 15px;
     text-align: center;
     font-size: 40px;
-    color: #b8b08d;
+    color: #202C39;
 }
 
 .secondaryHeader {
     margin-top: 15px;
     text-align: center;
     font-size: 25px;
-    color: #b8b08d;
+    color: #202C39;
 }
 
 .tetriaryHeader {
     margin-top: 15px;
     text-align: center;
     font-size: 18px;
-    color: #b8b08d;
+    color: #202C39;
 }
 
 .verticalRule {
