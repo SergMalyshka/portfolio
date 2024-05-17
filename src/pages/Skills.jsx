@@ -1,6 +1,6 @@
 import style from './Skills.module.css'
 
-export default function About() {
+export default function Skills() {
   return (
     <div>
       <h1 className="pageHeaders">My Skills</h1>
