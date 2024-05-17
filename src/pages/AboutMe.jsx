@@ -1,16 +1,16 @@
-import style from './Home.module.css'
+import style from './AboutMe.module.css'
 
-export default function Home() {
+export default function AboutMe() {
   return (
     <div>
       <h1 className={`pageHeaders`}>Hello, My name is Sergei Malyshka</h1>
 
       <hr></hr>
 
-      <div className={style.infotext}>
-        <div>
-          <img className={style.image} src=".\assets\facePNG.png"></img>
-        </div>
+      <div className={`${style.infotext} clearfix`}>
+        
+          <img className={`${style.image} col-md-6 float-md-start mb-3 ms-md-3`} src=".\assets\facePNG.png"></img>
+
         <p>
           I am a full-stack web developer with a wide knowledge of some of the most commonly used technologies that are used in modern development. I have attended and completed multiple online training programs
           and have a strong base knowledge of both Java and JavaScript, and many of the adjecent technologies. 

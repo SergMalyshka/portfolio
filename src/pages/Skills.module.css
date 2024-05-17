@@ -1,9 +1,11 @@
 .java {
     max-width: 23%;
+    
 }
 
 .languages {
     margin-top: 20px;
+    justify-content: center;
 }
 
 .java:hover {

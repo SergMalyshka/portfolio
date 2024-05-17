@@ -2,12 +2,12 @@
     float: left;
     margin: 5px;
     margin-bottom: 2px;
-    max-width: 10%;
+    max-width: 15%;
 }
 
 .infotext {
     font-size: large;
-    color: #202C39;
+    color: #F2D492;
     margin: 5px
 }
 
@@ -18,7 +18,7 @@
 }
 
 .infoList {
-    background-color: #B8B08D;
-    color: #202C39;
+    background-color: #283845;
+    color: #F2D492;
 }
 

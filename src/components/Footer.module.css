@@ -1,0 +1,5 @@
+.github {
+    max-height: 2.0rem;
+    display: flex;
+    justify-content: center;
+}

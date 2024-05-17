@@ -1,21 +1,97 @@
-export default function Contact() {
-    return (
-      <div>
-        <h1>Contact Page</h1>
-        <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-        </p>
+import { useState } from "react";
+import { validateEmail } from "../utils/helpers";
+import style from "./Contact.module.css"
+
+function Contact() {
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const hadleImputChange = (e) => {
+    const { target } = e;
+    const inputName = target.name;
+    const inputValue = target.value;
+
+    if (inputName === 'email') {
+      setEmail(inputValue)
+    } else if (inputName === 'name') {
+      setName(inputValue)
+    } else {
+      setMessage(inputValue)
+    }
+
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is not valid');
+    } else if (!name) {
+      setErrorMessage('Please fill out your name')
+    } else if (!message) {
+      setErrorMessage('Please fill out the message')
+    } else {
+      setErrorMessage('')
+    }
+
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email) || !name || !message) {
+      setErrorMessage('Please complete all fields before submitting the form');
+      return;
+    }
+
+    setEmail('')
+    setName('')
+    setMessage('')
+  };
+
+  return (
+    <div>
+      <div className="container pageHeaders text-center">
+        <h1>Leave me a message!</h1>
+        <form className='form' onSubmit={handleFormSubmit}>
+
+          <input
+            value={email}
+            name='email'
+            onChange={hadleImputChange}
+            type="email"
+            placeholder="email"
+            className={`form-control ${style.formItem}`}
+          />
+
+          <input
+            value={name}
+            name='name'
+            onChange={hadleImputChange}
+            type="text"
+            placeholder="name"
+            className={`form-control ${style.formItem}`}
+          />
+          <textarea
+            value={message}
+            name='message'
+            onChange={hadleImputChange}
+            type="text"
+            placeholder="message"
+            className={`form-control ${style.formItem}`}
+          ></textarea>
+
+          {errorMessage && (
+            <div>
+              <p className={style.error}>{errorMessage}</p>
+            </div>
+          )}
+
+          <button className="btn btn-warning" type="submit">
+            Submit
+          </button>
+        </form>
+
       </div>
-    );
-  }
-  
+    </div>
+  );
+}
+
+export default Contact

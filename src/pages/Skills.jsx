@@ -6,10 +6,13 @@ export default function About() {
       <h1 className="pageHeaders">My Skills</h1>
       <hr></hr>
       <div className={style.languages}>
-        <img className={style.java} src=".\assets\java.png"></img>
-        <img className={style.java} src=".\assets\js.png"></img>
-        <img className={style.java} src='.\assets\html.png'></img>
-        <img className={style.java} src='.\assets\css.png'></img>
+        <div classname={style.imgContainer}>
+          <img className={style.java} src=".\assets\java.png"></img>
+          <img className={style.java} src=".\assets\js.png"></img>
+          <img className={style.java} src='.\assets\html.png'></img>
+          <img className={style.java} src='.\assets\css.png'></img>
+        </div>
+
       </div>
 
       <h2 className='secondaryHeader'> Skills </h2>

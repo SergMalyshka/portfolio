@@ -1,0 +1,11 @@
+.formItem {
+    margin: 5px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.error {
+    font-size: 15px;
+    color: #E71D36
+}
