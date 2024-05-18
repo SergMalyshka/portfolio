@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "Sargo National Park catalogue",
-        imgSrc: "./assets/Sargo.png",
+        imgSrc: "/Sargo.png",
         description: "A NPS API driven project that allows the user to input a state code and receive a list of all national parks within that state. Clicking a specific park navigates you to that parks specific page with more info",
         skills: ['Google Maps API', 'Bootstrap', 'Bulma', 'NPS API'],
         github: "https://github.com/SergMalyshka/Syntax-Sorcerers",
@@ -10,7 +10,7 @@ const projects = [
     },
     {
         name: "Pizzateca Romana ",
-        imgSrc: "./assets/romana.png",
+        imgSrc: "/romana.png",
         description: "A point of sale system designed for a restaurant owner that allows for customers to create and place orders off the menu, and a full manager dashboard hidden behind the login functionality that allows to edit the menu, pricing of items, and full current and past order tracking",
         skills: ['MySQL', 'Sequelize', 'Bootstrap', 'Node.js', 'Express', 'MVC', 'JawsDB', 'Heroku', 'Handlebars'],
         github: "https://github.com/SergMalyshka/Pizzoteca-Romana",
@@ -19,7 +19,7 @@ const projects = [
     },
     {
         name: "Upcoming Queue managment project ",
-        imgSrc: "./assets/placeholder.webp",
+        imgSrc: "/placeholder.webp",
         description: "An upcoming project designed to help managing and solving the problem of the ever increasing wait time encountered at medical offices",
         skills: ['GraphQL', 'Apollo Server', 'React', 'MongoDD', 'More to Come...'],
         github: "https://github.com/SergMalyshka/PizzatecaRomanaPlusOne",
@@ -28,7 +28,7 @@ const projects = [
     },
         {
         name: "Workforce manager",
-        imgSrc: "./assets/workforce.png",
+        imgSrc: "/workforce.png",
         description: "A CLI app that utilizes MySQL queries to manager a hypothetical workplace. Allows full control of adding, deleting, updating of employees, their roles, salaries and departments, all through a CLI interface",
         skills: ['MySQL'],
         github: "https://github.com/SergMalyshka/WorkforceManager",
@@ -37,7 +37,7 @@ const projects = [
     },
     {
         name: "Stock-Mart SQL",
-        imgSrc: "./assets/sequelize.png",
+        imgSrc: "/sequelize.png",
         description: "API and SQL application that creates a server to manage multiple models: Categories, Products, CategoryTags and ProductTags. Fully functional API interacting with a relational database",
         skills: ['MySQL', 'Sequelize', 'Node.js', 'Express'],
         github: "https://github.com/SergMalyshka/StockMart",
@@ -46,7 +46,7 @@ const projects = [
     },
     {
         name: "Social Network NoSQL Database",
-        imgSrc: "./assets/mongo.jpeg",
+        imgSrc: "/mongo.jpeg",
         description: "A NoSQL databse with a server and fully functioning API routes managing Users, their thoughts, and their friends",
         skills: ['MongoDB', 'Express', 'Mongoose'],
         github: "https://github.com/SergMalyshka/SocialNetwork",

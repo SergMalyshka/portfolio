@@ -9,7 +9,7 @@ export default function AboutMe() {
 
       <div className={`${style.infotext} clearfix`}>
         
-          <img className={`${style.image} col-md-6 float-md-start mb-3 ms-md-3`} src=".\assets\facePNG.png"></img>
+          <img className={`${style.image} col-md-6 float-md-start mb-3 ms-md-3`} src="\facePNG.png"></img>
 
         <p>
           I am a full-stack web developer with a wide knowledge of some of the most commonly used technologies that are used in modern development. I have attended and completed multiple online training programs

@@ -7,10 +7,10 @@ export default function Skills() {
       <hr></hr>
       <div className={style.languages}>
         <div classname={style.imgContainer}>
-          <img className={style.java} src=".\assets\java.png"></img>
-          <img className={style.java} src=".\assets\js.png"></img>
-          <img className={style.java} src='.\assets\html.png'></img>
-          <img className={style.java} src='.\assets\css.png'></img>
+          <img className={style.java} src="\java.png"></img>
+          <img className={style.java} src="\js.png"></img>
+          <img className={style.java} src='\html.png'></img>
+          <img className={style.java} src='\css.png'></img>
         </div>
 
       </div>

@@ -23,8 +23,8 @@ function ProjectCard(props) {
                                     })}
                                 </ul>
                                 <div className={`card-body ${style.cardBody}`}>
-                                    <a href={project.github}><img className={style.github} src=".\assets\github.png"></img></a>
-                                    <a href={project.live}><img className={style.github} src=".\assets\live.png"></img></a>
+                                    <a href={project.github}><img className={style.github} src="\github.png"></img></a>
+                                    <a href={project.live}><img className={style.github} src="\live.png"></img></a>
                                 </div>
                             </div>
                         </div>
